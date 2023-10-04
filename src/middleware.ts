@@ -2,6 +2,7 @@ import { NextResponse, type NextRequest } from "next/server";
 
 export default async function middleware(req: NextRequest) {
   const host = req.nextUrl.origin.split("://")[1];
+  console.log(host);
 
   if (
     host.includes("gh.piss.ge") ||
