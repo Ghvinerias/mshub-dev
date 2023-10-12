@@ -3,11 +3,10 @@ import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { Github } from "lucide-react";
-// import { ModeToggle } from "@/components/mode-toggle";
 
 export default function IndexPage() {
   return (
-    <main className="flex min-h-screen items-center gap-6 justify-center">
+    <main className="flex h-[calc(100vh-4rem)] items-center gap-6 justify-center">
       <Link href={siteConfig.links.x} target="_blank" rel="noreferrer">
         <div
           className={cn(
@@ -34,7 +33,6 @@ export default function IndexPage() {
           <span className="sr-only">GitHub</span>
         </div>
       </Link>
-      {/* <ModeToggle /> */}
     </main>
   );
 }
