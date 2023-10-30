@@ -4,6 +4,10 @@ export default async function middleware(req: NextRequest) {
   const host = req.nextUrl.origin.split("://")[1];
   console.log(host);
 
+  if (host.includes("omo.piss.ge")) {
+    return NextResponse.redirect("https://www.facebook.com/oshubitidz");
+  }
+
   if (
     host.includes("gh.piss.ge") ||
     host.includes("gh.mshub.dev") ||
